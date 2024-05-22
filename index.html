@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- title -->
+    <title>WebStudio</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header-section flex center">
+      <!-- Navbar -->
+      <div class="container flex header-section__container">
+        <nav class="header__nav-bar flex">
+          <a href="./index.html" class="header__logo logo">
+            <p><span>Web</span>Studio</p>
+          </a>
+          <div class="header__links-container flex center">
+            <a href="#" class="header__link active">
+              <p>Studio</p>
+            </a>
+            <a href="./portofolio.html" class="header__link">
+              <p>Portfolio</p>
+            </a>
+            <a href="#" class="header__link">
+              <p>Contacts</p>
+            </a>
+          </div>
+        </nav>
+        <!-- Contact -->
+        <div class="header__contact flex center">
+          <a href="mailto:info@devstudio.com" class="contact__link flex center">
+            <div class="flex center header__contact-container">
+              <svg class="header__contact-icon">
+                <use
+                  href="./images/icons/contact-icons.svg#icon-envelope"
+                ></use>
+              </svg>
+              <p>info@devstudio.com</p>
+            </div>
+          </a>
+          <a href="tel:+12127724150" class="contact__link">
+            <div class="flex center header__contact-container">
+              <svg class="header__contact-icon">
+                <use
+                  href="./images/icons/contact-icons.svg#icon-smartphone"
+                ></use>
+              </svg>
+              <p>+1 212-772-4150</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- Hero section -->
+      <section class="hero-section section flex center">
+        <div class="container flex center hero-section__container">
+          <h1 class="hero-section__title">
+            EFFECTIVE SOLUTIONS FOR YOUR BUSINESS
+          </h1>
+          <button
+            data-modal-open
+            type="button"
+            class="hero-section__button btn"
+          >
+            Request our service
+          </button>
+        </div>
+      </section>
+      <!-- Atribute section -->
+      <section class="section">
+        <div class="container">
+          <ul class="atribute-list flex center">
+            <li>
+              <div class="atribute-list__container">
+                <div class="atribute-list__icon-background flex center">
+                  <svg class="atribute-list__icon">
+                    <use
+                      href="./images/icons/atribute-icons.svg#icon-antenna-1"
+                    ></use>
+                  </svg>
+                </div>
+                <p class="atribute-list__title">ATTENTION TO DETAILS</p>
+                <p class="atribute-list__content">
+                  We go into all the details and processes of your business to
+                  develop a customized solution.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="atribute-list__container">
+                <div class="atribute-list__icon-background flex center">
+                  <svg class="atribute-list__icon">
+                    <use
+                      href="./images/icons/atribute-icons.svg#icon-clock-1"
+                    ></use>
+                  </svg>
+                </div>
+                <p class="atribute-list__title">PUNCTUALITY</p>
+                <p class="atribute-list__content">
+                  With us, you can feel safe and secure. An important principle
+                  of the company: respect your time and deadlines.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="atribute-list__container">
+                <div class="atribute-list__icon-background flex center">
+                  <svg class="atribute-list__icon">
+                    <use
+                      href="./images/icons/atribute-icons.svg#icon-diagram-1"
+                    ></use>
+                  </svg>
+                </div>
+                <p class="atribute-list__title">PLANNING</p>
+                <p class="atribute-list__content">
+                  You will be able to observe and participate in every phase of
+                  solution development and implementation.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="atribute-list__container">
+                <div class="atribute-list__icon-background flex center">
+                  <svg class="atribute-list__icon">
+                    <use
+                      href="./images/icons/atribute-icons.svg#icon-astronaut-1"
+                    ></use>
+                  </svg>
+                </div>
+                <p class="atribute-list__title">MODERN TECHNOLOGIES</p>
+                <p class="atribute-list__content">
+                  We use innovative tools to solve assigned tasks. It's time to
+                  simplify work processes.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <h2 class="section-title atribute-section__title">What we do</h2>
+          <div class="atribute-section__image-list">
+            <div class="atribute-section__image-container">
+              <img
+                src="./images/index/box-1.jpg"
+                alt="imgae of coding"
+                width="370"
+              />
+              <div class="atribute-section__image-overlay">
+                <p>DESKTOP APPS</p>
+              </div>
+            </div>
+            <div class="atribute-section__image-container">
+              <img
+                src="./images/index/box-2.jpg"
+                alt="image of mobile apps"
+                width="370"
+              />
+              <div class="atribute-section__image-overlay">
+                <p>MOBILE APPS</p>
+              </div>
+            </div>
+            <div class="atribute-section__image-container">
+              <img
+                src="./images/index/box-3.jpg"
+                alt="image of design"
+                width="370"
+              />
+              <div class="atribute-section__image-overlay">
+                <p>DESIGN SOLUTIONS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Team section -->
+      <section class="team-section section">
+        <div class="container">
+          <h2 class="section-title">Our Team</h2>
+          <ul class="team-card-list flex center">
+            <li>
+              <div class="team-card">
+                <img
+                  src="./images/index/chris.jpg"
+                  alt="image of Christopher Walker"
+                  width="260"
+                  class="team-card__img"
+                />
+                <p class="team-card__name">Christopher Walker</p>
+                <p class="team-card__function">Product Designer</p>
+                <div class="team-card__icons">
+                  <a
+                    href="https://www.instagram.com/goit.romania/"
+                    class="team-card__icon-link"
+                    target="_blank"
+                  >
+                    <div class="team-card__icon-background flex center">
+                      <svg class="team-card__icon">
+                        <use
+                          href="./images/icons/social-media-icons.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <a
+                    href="https://twitter.com/goITclub"
+                    class="team-card__icon-link"
+                    target="_blank"
+                  >
+                    <div class="team-card__icon-background flex center">
+                      <svg class="team-card__icon">
+                        <use
+                          href="./images/icons/social-media-icons.svg#icon-twitter"
+                        ></use>
+                      </svg>
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://www.facebook.com/goit.romania/"
+                    class="team-card__icon-link"
+                    target="_blank"
+                  >
+                    <div class="team-card__icon-background flex center">
+                      <svg class="team-card__icon">
+                        <use
+                          href="./images/icons/social-media-icons.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/goit-romania/?originalSubdomain=ro"
+                    class="team-card__icon-link"
+                    target="_blank"
+                  >
+                    <div class="team-card__icon-background flex center">
+                      <svg class="team-card__icon">
+                        <use
+                          href="./images/icons/social-media-icons.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="team-card">
+                <img
+                  src="./images/index/kylie.jpg"
+                  alt="image of Kylie Evans"
+                  width="260"
+                  class="team-card__img"
+                />
+                <p class="team-card__name">Kylie Evans</p>
+                <p class="team-card__function">Frontend Developer</p>
+                <div class="team-card__icons">
+                  <a
+                    href="https://www.instagram.com/goit.romania/"
+                    class="team-card__icon-link"
+                    target="_blank"
+                  >
+                    <div class="team-card__icon-background flex center">
+                      <svg class="team-card__icon">
+                        <use
+                          href="./images/icons/social-media-icons.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://twitter.com/goITclub"
+                    class="team-card__icon-link"
+                    target="_blank"
+                  >
+                    <div class="team-card__icon-background flex center">
+                      <svg class="team-card__icon">
+                        <use
+                          href="./images/icons/social-media-icons.svg#icon-twitter"
+                        ></use>
+                      </svg>
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://www.facebook.com/goit.romania/"
+                    class="team-card__icon-link"
+                    target="_blank"
+                  >
+                    <div class="team-card__icon-background flex center">
+                      <svg class="team-card__icon">
+                        <use
+                          href="./images/icons/social-media-icons.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/goit-romania/?originalSubdomain=ro"
+                    class="team-card__icon-link"
+                    target="_blank"
+                  >
+                    <div class="team-card__icon-background flex center">
+                      <svg class="team-card__icon">
+                        <use
+                          href="./images/icons/social-media-icons.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="team-card">
+                <img
+                  src="./images/index/ryan.jpg"
+                  alt="image of Ryan Harris"
+                  width="260"
+                  class="team-card__img"
+                />
+                <p class="team-card__name">Ryan Harris</p>
+                <p class="team-card__function">Marketing</p>
+                <div class="team-card__icons">
+                  <a
+                    href="https://www.instagram.com/goit.romania/"
+                    class="team-card__icon-link"
+                    target="_blank"
+                  >
+                    <div class="team-card__icon-background flex center">
+                      <svg class="team-card__icon">
+                        <use
+                          href="./images/icons/social-media-icons.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <a
+                    href="https://twitter.com/goITclub"
+                    class="team-card__icon-link"
+                    target="_blank"
+                  >
+                    <div class="team-card__icon-background flex center">
+                      <svg class="team-card__icon">
+                        <use
+                          href="./images/icons/social-media-icons.svg#icon-twitter"
+                        ></use>
+                      </svg>
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://www.facebook.com/goit.romania/"
+                    class="team-card__icon-link"
+                    target="_blank"
+                  >
+                    <div class="team-card__icon-background flex center">
+                      <svg class="team-card__icon">
+                        <use
+                          href="./images/icons/social-media-icons.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/goit-romania/?originalSubdomain=ro"
+                    class="team-card__icon-link"
+                    target="_blank"
+                  >
+                    <div class="team-card__icon-background flex center">
+                      <svg class="team-card__icon">
+                        <use
+                          href="./images/icons/social-media-icons.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="team-card">
+                <img
+                  src="./images/index/tyler.jpg"
+                  alt="image of Tyler Moore"
+                  width="260"
+                  class="team-card__img"
+                />
+                <p class="team-card__name">Tyler Moore</p>
+                <p class="team-card__function">UI Designer</p>
+                <div class="team-card__icons">
+                  <a
+                    href="https://www.instagram.com/goit.romania/"
+                    class="team-card__icon-link"
+                    target="_blank"
+                  >
+                    <div class="team-card__icon-background flex center">
+                      <svg class="team-card__icon">
+                        <use
+                          href="./images/icons/social-media-icons.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <a
+                    href="https://twitter.com/goITclub"
+                    class="team-card__icon-link"
+                    target="_blank"
+                  >
+                    <div class="team-card__icon-background flex center">
+                      <svg class="team-card__icon">
+                        <use
+                          href="./images/icons/social-media-icons.svg#icon-twitter"
+                        ></use>
+                      </svg>
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://www.facebook.com/goit.romania/"
+                    class="team-card__icon-link"
+                    target="_blank"
+                  >
+                    <div class="team-card__icon-background flex center">
+                      <svg class="team-card__icon">
+                        <use
+                          href="./images/icons/social-media-icons.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/goit-romania/?originalSubdomain=ro"
+                    class="team-card__icon-link"
+                    target="_blank"
+                  >
+                    <div class="team-card__icon-background flex center">
+                      <svg class="team-card__icon">
+                        <use
+                          href="./images/icons/social-media-icons.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Clients -->
+      <section class="client-section section">
+        <div class="container">
+          <h2 class="section-title">Regular Clients</h2>
+          <div class="client-list flex center">
+            <a href="#">
+              <div class="client-list__background flex center">
+                <svg class="client-list__logo">
+                  <use href="./images/logos/clients.svg#icon-Client-1"></use>
+                </svg>
+              </div>
+            </a>
+            <a href="#">
+              <div class="client-list__background flex center">
+                <svg class="client-list__logo">
+                  <use href="./images/logos/clients.svg#icon-Client-2"></use>
+                </svg>
+              </div>
+            </a>
+            <a href="#">
+              <div class="client-list__background flex center">
+                <svg class="client-list__logo">
+                  <use href="./images/logos/clients.svg#icon-Client-3"></use>
+                </svg>
+              </div>
+            </a>
+            <a href="#">
+              <div class="client-list__background flex center">
+                <svg class="client-list__logo">
+                  <use href="./images/logos/clients.svg#icon-Client-4"></use>
+                </svg>
+              </div>
+            </a>
+            <a href="#">
+              <div class="client-list__background flex center">
+                <svg class="client-list__logo">
+                  <use href="./images/logos/clients.svg#icon-Client-5"></use>
+                </svg>
+              </div>
+            </a>
+            <a href="#">
+              <div class="client-list__background flex center">
+                <svg class="client-list__logo">
+                  <use href="./images/logos/clients.svg#icon-Client-6"></use>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer-section">
+      <div class="container flex footer-container">
+        <div>
+          <a href="#" class="logo footer-logo">
+            <p><span>Web</span>Studio</p>
+          </a>
+          <address class="address-container">
+            <p>695 Park Ave, NY 10065, USA</p>
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a href="tel:+12127724150">+1 212-772-4150</a>
+          </address>
+        </div>
+        <div>
+          <p class="footer__title">Find us on</p>
+          <div class="footer__icons">
+            <a
+              href="https://www.instagram.com/goit.romania/"
+              class="footer__icon-link"
+              target="_blank"
+            >
+              <div class="footer__icon-background flex center">
+                <svg class="footer__icon">
+                  <use
+                    href="./images/icons/social-media-icons.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </div>
+            </a>
+            <a
+              href="https://twitter.com/goITclub"
+              class="footer__icon-link"
+              target="_blank"
+            >
+              <div class="footer__icon-background flex center">
+                <svg class="footer__icon">
+                  <use
+                    href="./images/icons/social-media-icons.svg#icon-twitter"
+                  ></use>
+                </svg>
+              </div>
+            </a>
+
+            <a
+              href="https://www.facebook.com/goit.romania/"
+              class="footer__icon-link"
+              target="_blank"
+            >
+              <div class="footer__icon-background flex center">
+                <svg class="footer__icon">
+                  <use
+                    href="./images/icons/social-media-icons.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </div>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/goit-romania/?originalSubdomain=ro"
+              class="footer__icon-link"
+              target="_blank"
+            >
+              <div class="footer__icon-background flex center">
+                <svg class="footer__icon">
+                  <use
+                    href="./images/icons/social-media-icons.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </div>
+            </a>
+            <section class="subscribe_section">
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: baseline;
+                "
+              >
+                <h4>SUBSCRIBE TO THE NEWSLETTER</h4>
+                <form name="subscribe_form">
+                  <div style="display: flex; align-items: baseline">
+                    <input
+                      name="usermail"
+                      type="email"
+                      class="subscribe-form_input"
+                      placeholder="E-mail"
+                      style="background-color: #2f303a"
+                    />
+                    <button
+                      type="submit"
+                      class="subscribe-form__btn"
+                      style="height: 40px; display: flex; align-items: center"
+                    >
+                      Subscribe
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        style="margin-left: 8px"
+                      >
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path
+                          d="M2.01 21L23 12 2.01 3v7l15 2-15 2z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Trigger Button -->
+    <button data-modal-open>Open Modal</button>
+
+    <!-- Modal -->
+    <div class="modal__backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button
+          type="button"
+          class="modal__close-btn flex center"
+          data-modal-close
+        >
+          <svg class="modal__close-icon">
+            <use href="#close-icon"></use>
+          </svg>
+        </button>
+        <form class="modal__form">
+          <h2>Leave your information and we'll call you back</h2>
+          <label>
+            <span>Name</span>
+            <div class="input-container">
+              <i class="fas fa-user"></i>
+              <input type="text" name="name" required />
+            </div>
+          </label>
+          <label>
+            <span>Telephone</span>
+            <div class="input-container">
+              <i class="fas fa-phone"></i>
+              <input type="tel" name="telephone" required />
+            </div>
+          </label>
+          <label>
+            <span>E-mail</span>
+            <div class="input-container">
+              <i class="fas fa-envelope"></i>
+              <input type="email" name="email" required />
+            </div>
+          </label>
+          <label>
+            <span>Comments</span>
+            <div class="input-container">
+              <i class="fas fa-comment"></i>
+              <textarea
+                name="comments"
+                class="centered-textarea"
+                required
+              ></textarea>
+            </div>
+          </label>
+
+          <label>
+            <input type="checkbox" name="terms" required />
+            <span
+              >I agree with the letter and accept the
+              <a href="#">Terms and Conditions</a></span
+            >
+          </label>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- SVG Definitions -->
+    <svg style="display: none">
+      <symbol id="close-icon" viewBox="0 0 24 24">
+        <path d="M18 6L6 18M6 6l12 12"></path>
+      </symbol>
+    </svg>
+
+    <script src="modal.js"></script>
+  </body>
+</html>

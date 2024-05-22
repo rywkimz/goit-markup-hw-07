@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- title -->
+    <title>WebStudio</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header-section flex center">
+      <!-- Navbar -->
+      <div class="container flex header-section__container">
+        <nav class="header__nav-bar flex">
+          <a href="./index.html" class="header__logo logo">
+            <p><span>Web</span>Studio</p>
+          </a>
+          <div class="header__links-container flex center">
+            <a href="./index.html" class="header__link">
+              <p>Studio</p>
+            </a>
+            <a href="./portofolio.html" class="header__link active">
+              <p>Portfolio</p>
+            </a>
+            <a href="#" class="header__link">
+              <p>Contacts</p>
+            </a>
+          </div>
+        </nav>
+        <!-- Contact -->
+        <div class="header__contact flex center">
+          <a href="mailto:info@devstudio.com" class="contact__link flex center">
+            <div class="flex center header__contact-container">
+              <svg class="header__contact-icon">
+                <use
+                  href="./images/icons/contact-icons.svg#icon-envelope"
+                ></use>
+              </svg>
+              <p>info@devstudio.com</p>
+            </div>
+          </a>
+          <a href="tel:+12127724150" class="contact__link">
+            <div class="flex center header__contact-container">
+              <svg class="header__contact-icon">
+                <use
+                  href="./images/icons/contact-icons.svg#icon-smartphone"
+                ></use>
+              </svg>
+              <p>+1 212-772-4150</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- Main -->
+    <main>
+      <div class="container">
+        <section class="section">
+          <ul class="button-list flex center">
+            <li><button class="btn" type="button">All</button></li>
+            <li><button class="btn" type="button">Web-Sites</button></li>
+            <li><button class="btn" type="button">Apps</button></li>
+            <li><button class="btn" type="button">Design</button></li>
+            <li><button class="btn" type="button">Marketing</button></li>
+          </ul>
+          <ul class="portofolio-card-list">
+            <li>
+              <div class="portofolio-card">
+                <div class="portofolio-card__image-container">
+                  <img
+                    src="./images/portofolio/meeting.jpg"
+                    alt="Photo of an online meeting."
+                  />
+                  <div class="overlay flex center">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Modi quos harum mollitia iusto eos autem ut dignissimos
+                      labore. Minima, dolorem.
+                    </p>
+                  </div>
+                </div>
+                <div class="portofolio-card__description">
+                  <p class="card__title">Technoduck</p>
+                  <p class="card__description">Web-site</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                <div class="portofolio-card">
+                  <div class="portofolio-card__image-container">
+                    <img
+                      src="./images/portofolio/basket.jpg"
+                      alt="Photo of men playing basketball."
+                    />
+                    <div class="overlay flex center">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Modi quos harum mollitia iusto eos autem ut
+                        dignissimos labore. Minima, dolorem.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="portofolio-card__description">
+                    <p class="card__title">Poster New Orlean vs Golden Star</p>
+                    <p class="card__description">Design</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="portofolio-card">
+                  <div class="portofolio-card__image-container">
+                    <img
+                      src="./images/portofolio/seafood.jpg"
+                      alt="Photo of a restaurant logo."
+                    />
+                    <div class="overlay flex center">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Modi quos harum mollitia iusto eos autem ut
+                        dignissimos labore. Minima, dolorem.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="portofolio-card__description">
+                    <p class="card__title">Seafood Restaurant</p>
+                    <p class="card__description">Apps</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="portofolio-card">
+                  <div class="portofolio-card__image-container">
+                    <img
+                      src="./images/portofolio/headpgones.jpg"
+                      alt="Photo of headphones."
+                    />
+                    <div class="overlay flex center">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Modi quos harum mollitia iusto eos autem ut
+                        dignissimos labore. Minima, dolorem.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="portofolio-card__description">
+                    <p class="card__title">Project Prime</p>
+                    <p class="card__description">Marketing</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="portofolio-card">
+                  <div class="portofolio-card__image-container">
+                    <img
+                      src="./images/portofolio/boxes.jpg"
+                      alt="Photo of a mockup design."
+                    />
+                    <div class="overlay flex center">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Modi quos harum mollitia iusto eos autem ut
+                        dignissimos labore. Minima, dolorem.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="portofolio-card__description">
+                    <p class="card__title">Project Boxes</p>
+                    <p class="card__description">Apps</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="portofolio-card">
+                  <div class="portofolio-card__image-container">
+                    <img
+                      src="./images/portofolio/monitor.jpg"
+                      alt="Photo of a monitor."
+                    />
+                    <div class="overlay flex center">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Modi quos harum mollitia iusto eos autem ut
+                        dignissimos labore. Minima, dolorem.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="portofolio-card__description">
+                    <p class="card__title">Inspiration has no Borders</p>
+                    <p class="card__description">Web-site</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="portofolio-card">
+                  <div class="portofolio-card__image-container">
+                    <img
+                      src="./images/portofolio/books.jpg"
+                      alt="Photo of a book."
+                    />
+                    <div class="overlay flex center">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Modi quos harum mollitia iusto eos autem ut
+                        dignissimos labore. Minima, dolorem.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="portofolio-card__description">
+                    <p class="card__title">Limited Edition</p>
+                    <p class="card__description">Design</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="portofolio-card">
+                  <div class="portofolio-card__image-container">
+                    <img
+                      src="./images/portofolio/label.jpg"
+                      alt="Photo of a label."
+                    />
+                    <div class="overlay flex center">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Modi quos harum mollitia iusto eos autem ut
+                        dignissimos labore. Minima, dolorem.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="portofolio-card__description">
+                    <p class="card__title">Project LAB</p>
+                    <p class="card__description">Marketing</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="portofolio-card">
+                  <div class="portofolio-card__image-container">
+                    <img
+                      src="./images/portofolio/business.jpg"
+                      alt="Photo of someone working on a laptop."
+                    />
+                    <div class="overlay flex center">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Modi quos harum mollitia iusto eos autem ut
+                        dignissimos labore. Minima, dolorem.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="portofolio-card__description">
+                    <p class="card__title">Growing Business</p>
+                    <p class="card__description">Apps</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer-section">
+      <div class="container flex footer-container">
+        <div>
+          <a href="#" class="logo footer-logo">
+            <p><span>Web</span>Studio</p>
+          </a>
+          <address class="address-container">
+            <p>695 Park Ave, NY 10065, USA</p>
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a href="tel:+12127724150">+1 212-772-4150</a>
+          </address>
+        </div>
+        <div>
+          <p class="footer__title">Find us on</p>
+          <div class="footer__icons">
+            <a
+              href="https://www.instagram.com/goit.romania/"
+              class="footer__icon-link"
+              target="_blank"
+            >
+              <div class="footer__icon-background flex center">
+                <svg class="footer__icon">
+                  <use
+                    href="./images/icons/social-media-icons.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </div>
+            </a>
+            <a
+              href="https://twitter.com/goITclub"
+              class="footer__icon-link"
+              target="_blank"
+            >
+              <div class="footer__icon-background flex center">
+                <svg class="footer__icon">
+                  <use
+                    href="./images/icons/social-media-icons.svg#icon-twitter"
+                  ></use>
+                </svg>
+              </div>
+            </a>
+            <a
+              href="https://www.facebook.com/goit.romania/"
+              class="footer__icon-link"
+              target="_blank"
+            >
+              <div class="footer__icon-background flex center">
+                <svg class="footer__icon">
+                  <use
+                    href="./images/icons/social-media-icons.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </div>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/goit-romania/?originalSubdomain=ro"
+              class="footer__icon-link"
+              target="_blank"
+            >
+              <div class="footer__icon-background flex center">
+                <svg class="footer__icon">
+                  <use
+                    href="./images/icons/social-media-icons.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <section class="subscribe_section">
+          <div
+            style="display: flex; flex-direction: column; align-items: baseline"
+          >
+            <h4>SUBSCRIBE TO THE NEWSLETTER</h4>
+            <form name="subscribe_form">
+              <div style="display: flex; align-items: baseline">
+                <input
+                  name="usermail"
+                  type="email"
+                  class="subscribe-form_input"
+                  placeholder="E-mail"
+                  style="background-color: #2f303a"
+                />
+                <button
+                  type="submit"
+                  class="subscribe-form__btn"
+                  style="height: 40px; display: flex; align-items: center"
+                >
+                  Subscribe
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    style="margin-left: 8px"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M2.01 21L23 12 2.01 3v7l15 2-15 2z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
