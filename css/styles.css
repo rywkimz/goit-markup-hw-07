@@ -739,9 +739,12 @@ a:focus .client-list__background {
   background: #007bff;
   color: white;
   border: none;
-  padding: 10px 15px;
+  padding: 20px 90px;
   border-radius: 4px;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
 }
 
 .modal__form button:hover {
@@ -761,18 +764,47 @@ a:focus .client-list__background {
   transform: translateY(-50%);
 }
 
-.modal__form button {
-  background: #007bff;
-  color: white;
-  border: none;
-  padding: 15px 30px;
-  border-radius: 4px;
-  cursor: pointer;
-  display: block;
-  margin: 0 auto;
-  width: fit-content;
+.input-container {
+  position: relative;
 }
 
-.modal__form button:hover {
-  background: #0056b3;
+input {
+  padding-left: 25px;
 }
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  fill: black;
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox-label__modal__form {
+  display: flex !important;
+  margin: 0;
+  padding: 20px;
+  justify-content: center;
+}
+
+.checkbox-button__modal__form {
+  width: auto !important;
+  margin-right: 15px;
+}
+
+.checkbox-span__modal__form {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.checkbox-span__modal__form a {
+    color: black;
+;
+  }
+
+.checkbox-span__modal__form a:hover {
+    color: #0056b3;
+    border-bottom: 1px solid #0056b3;
+  }

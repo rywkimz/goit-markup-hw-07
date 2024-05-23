@@ -647,54 +647,51 @@
           class="modal__close-btn flex center"
           data-modal-close
         >
-          <svg class="modal__close-icon">
-            <use href="#close-icon"></use>
+          <svg class="modal__close-icon" viewBox="0 0 24 24">
+            <line x1="5" y1="5" x2="19" y2="19" stroke="black" stroke-width="2" />
+            <line x1="19" y1="5" x2="5" y2="19" stroke="black" stroke-width="2" />
           </svg>
         </button>
         <form class="modal__form">
-          <h2>Leave your information and we'll call you back</h2>
-          <label>
-            <span>Name</span>
-            <div class="input-container">
-              <i class="fas fa-user"></i>
-              <input type="text" name="name" required />
-            </div>
-          </label>
-          <label>
-            <span>Telephone</span>
-            <div class="input-container">
-              <i class="fas fa-phone"></i>
-              <input type="tel" name="telephone" required />
-            </div>
-          </label>
-          <label>
-            <span>E-mail</span>
-            <div class="input-container">
-              <i class="fas fa-envelope"></i>
-              <input type="email" name="email" required />
-            </div>
-          </label>
-          <label>
-            <span>Comments</span>
-            <div class="input-container">
-              <i class="fas fa-comment"></i>
-              <textarea
-                name="comments"
-                class="centered-textarea"
-                required
-              ></textarea>
-            </div>
-          </label>
-
-          <label>
-            <input type="checkbox" name="terms" required />
-            <span
-              >I agree with the letter and accept the
-              <a href="#">Terms and Conditions</a></span
-            >
-          </label>
-          <button type="submit">Send</button>
-        </form>
+        <h2>Leave your information and we'll call you back</h2>
+        <label>
+          <span>Name</span>
+          <div class="input-container">
+            <input type="text" name="name" id="name" required />
+            <label for="name">
+              <svg class="icon">
+                <use xlink:href="./images/icons/persoana.svg#persoana"></use>
+              </svg>
+            </label>
+          </div> 
+        </label>
+        <label>
+          <span>Telephone</span>
+          <div class="input-container">
+            <i class="fas fa-phone"></i>
+            <input type="tel" name="telephone" required />
+          </div>
+        </label>
+        <label>
+          <span>E-mail</span>
+          <div class="input-container">
+            <i class="fas fa-envelope"></i>
+            <input type="email" name="email" required />
+          </div>
+        </label>
+        <label>
+          <span>Comments</span>
+          <div class="input-container">
+            <i class="fas fa-comment"></i>
+            <textarea name="comments" class="centered-textarea" required></textarea>
+          </div>
+        </label>
+        <label class="checkbox-label__modal__form">
+          <input class="checkbox-button__modal__form" type="checkbox" name="terms" required />
+          <span class="checkbox-span__modal__form">I agree with the letter and accept the <a href="#">Terms and Conditions</a></span>
+        </label>
+        <button type="submit">Send</button>
+      </form>
       </div>
     </div>
 
