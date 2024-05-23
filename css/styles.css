@@ -768,7 +768,7 @@ a:focus .client-list__background {
   position: relative;
 }
 
-input {
+.input {
   padding-left: 25px;
 }
 
@@ -801,7 +801,6 @@ input {
 
 .checkbox-span__modal__form a {
     color: black;
-;
   }
 
 .checkbox-span__modal__form a:hover {
