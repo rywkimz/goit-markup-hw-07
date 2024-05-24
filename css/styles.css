@@ -13,6 +13,18 @@
   --black: #000;
 }
 
+/* Regular background image */
+.element {
+    background-image: url('./images/index/hero-background.jpg');
+}
+
+/* High-density (retina) background image */
+@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+    .element {
+        background-image: url('./images/index/hero-background@2x.jpg');
+    }
+}
+
 /* Globals */
 
 * {
@@ -300,8 +312,6 @@ ul {
 
 .team-card {
   background-color: var(--white);
-  width: 260px;
-  height: 428px;
   box-shadow: 0px 2px 1px 0px #00000033;
   box-shadow: 0px 1px 1px 0px #00000024;
   box-shadow: 0px 1px 3px 0px #0000001f;
@@ -366,6 +376,27 @@ ul {
 .team-card__icon-link:focus .team-card__icon {
   fill: var(--white);
   stroke: var(--white);
+}
+
+/* Styles for mobile devices (default) */
+.team-card__img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Styles for screens with a minimum width of 1200px */
+@media (min-width: 1200px) {
+    .team-card__img {
+        width: 260px;
+        margin: 0 auto 20px;
+    }
+}
+
+/* Styles for screens with a minimum width of 1200px */
+@media (min-width: 1200px) {
+    .team-card__img {
+        width: 320px;
+    }
 }
 
 /* Client Section */
