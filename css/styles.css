@@ -851,3 +851,8 @@ a:focus .client-list__background {
   color: #0056b3;
   border-bottom: 1px solid #0056b3;
 }
+
+/* Mobile Menu */
+.menu-toggle .js-open-menu {
+  justify-content: center;
+}
