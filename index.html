@@ -16,60 +16,95 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <!-- title -->
+    <!-- Title -->
     <title>WebStudio</title>
   </head>
   <body>
-    <!-- Header -->
+<!-- Header -->
     <header class="header-section flex center">
-      <!-- Navbar -->
-      <div class="container flex header-section__container">
-        <nav class="header__nav-bar flex">
-          <a href="./index.html" class="header__logo logo">
-            <p><span>Web</span>Studio</p>
-          </a>
-          <div class="header__links-container flex center">
-            <a href="#" class="header__link active">
-              <p>Studio</p>
-            </a>
-            <a href="./portofolio.html" class="header__link">
-              <p>Portfolio</p>
-            </a>
-            <a href="#" class="header__link">
-              <p>Contacts</p>
-            </a>
-          </div>
-        </nav>
-        <!-- Contact -->
-        <div class="header__contact flex center">
-          <a href="mailto:info@devstudio.com" class="contact__link flex center">
-            <div class="flex center header__contact-container">
-              <svg class="header__contact-icon">
-                <use
-                  href="./images/icons/contact-icons.svg#icon-envelope"
-                ></use>
-              </svg>
-              <p>info@devstudio.com</p>
+        <!-- Navbar -->
+        <div class="container flex header-section__container">
+            <nav class="header__nav-bar flex">
+                <a href="./index.html" class="header__logo logo">
+                    <p><span>Web</span>Studio</p>
+                </a>
+                <div class="header__links-container flex center">
+                    <a href="#" class="header__link active">
+                        <p>Studio</p>
+                    </a>
+                    <a href="./portofolio.html" class="header__link">
+                        <p>Portfolio</p>
+                    </a>
+                    <a href="#" class="header__link">
+                        <p>Contacts</p>
+                    </a>
+                </div>
+            </nav>
+            <!-- Contact -->
+            <div class="header__contact flex center">
+                <a href="mailto:info@devstudio.com" class="contact__link flex center">
+                    <div class="flex center header__contact-container">
+                        <svg class="header__contact-icon">
+                            <use href="./images/icons/contact-icons.svg#icon-envelope"></use>
+                        </svg>
+                        <p>info@devstudio.com</p>
+                    </div>
+                </a>
+                <a href="tel:+12127724150" class="contact__link">
+                    <div class="flex center header__contact-container">
+                        <svg class="header__contact-icon">
+                            <use href="./images/icons/contact-icons.svg#icon-smartphone"></use>
+                        </svg>
+                        <p>+1 212-772-4150</p>
+                    </div>
+                </a>
             </div>
-          </a>
-          <a href="tel:+12127724150" class="contact__link">
-            <div class="flex center header__contact-container">
-              <svg class="header__contact-icon">
-                <use
-                  href="./images/icons/contact-icons.svg#icon-smartphone"
-                ></use>
-              </svg>
-              <p>+1 212-772-4150</p>
-            </div>
-          </a>
         </div>
-      </div>
-      <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
+        <!-- Mobile Menu Button -->
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            Open Menu
+        </button>
     </header>
+    <!-- Mobile Menu Container -->
+    <nav class="mobile-menu js-menu-container">
+        <div class="container flex header-section__container">
+            <nav class="header__nav-bar flex">
+                <a href="./index.html" class="header__logo logo">
+                    <p><span>Web</span>Studio</p>
+                </a>
+                <div class="header__links-container flex center">
+                    <a href="#" class="header__link active">
+                        <p>Studio</p>
+                    </a>
+                    <a href="./portofolio.html" class="header__link">
+                        <p>Portfolio</p>
+                    </a>
+                    <a href="#" class="header__link">
+                        <p>Contacts</p>
+                    </a>
+                </div>
+            </nav>
+            <!-- Contact -->
+            <div class="header__contact flex center">
+                <a href="mailto:info@devstudio.com" class="contact__link flex center">
+                    <div class="flex center header__contact-container">
+                        <svg class="header__contact-icon">
+                            <use href="./images/icons/contact-icons.svg#icon-envelope"></use>
+                        </svg>
+                        <p>info@devstudio.com</p>
+                    </div>
+                </a>
+                <a href="tel:+12127724150" class="contact__link">
+                    <div class="flex center header__contact-container">
+                        <svg class="header__contact-icon">
+                            <use href="./images/icons/contact-icons.svg#icon-smartphone"></use>
+                        </svg>
+                        <p>+1 212-772-4150</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>
     <!-- Main -->
     <main>
       <!-- Hero section -->
@@ -159,31 +194,31 @@
           <h2 class="section-title atribute-section__title">What we do</h2>
           <div class="atribute-section__image-list">
             <div class="atribute-section__image-container">
-              <img
-                src="./images/index/box-1.jpg"
-                alt="imgae of coding"
-                width="370"
-              />
+              <picture>
+              <source srcset="./images/index/box-1.jpg" media="(min-width: 1024px)">
+                    <source srcset="./images/index/box-1@2x.jpg" media="(min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)">
+                    <img src="./images/index/box-1.jpg" alt="Image of coding">
+                </picture>
               <div class="atribute-section__image-overlay">
                 <p>DESKTOP APPS</p>
               </div>
             </div>
             <div class="atribute-section__image-container">
-              <img
-                src="./images/index/box-2.jpg"
-                alt="image of mobile apps"
-                width="370"
-              />
-              <div class="atribute-section__image-overlay">
-                <p>MOBILE APPS</p>
-              </div>
-            </div>
-            <div class="atribute-section__image-container">
-              <img
-                src="./images/index/box-3.jpg"
-                alt="image of design"
-                width="370"
-              />
+              <picture>
+            <source srcset="./images/index/box-2.jpg" media="(min-width: 1024px)">
+            <source srcset="./images/index/box-2@2x.jpg" media="(min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)">
+            <img src="./images/index/box-1.jpg" alt="Image of coding">
+        </picture>
+                      <div class="atribute-section__image-overlay">
+                        <p>MOBILE APPS</p>
+                      </div>
+                    </div>
+                    <div class="atribute-section__image-container">
+                      <picture>
+            <source srcset="./images/index/box-3.jpg" media="(min-width: 1024px)">
+            <source srcset="./images/index/box-3@2x.jpg" media="(min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)">
+            <img src="./images/index/box-3.jpg" alt="Image of design" width="370">
+        </picture>
               <div class="atribute-section__image-overlay">
                 <p>DESIGN SOLUTIONS</p>
               </div>
@@ -198,12 +233,11 @@
           <ul class="team-card-list flex center">
             <li>
               <div class="team-card">
-                <img
-                  src="./images/index/chris.jpg"
-                  alt="image of Christopher Walker"
-                  width="260"
-                  class="team-card__img"
-                />
+                <picture>
+                  <source srcset="./images/index/chris.jpg" media="(min-width: 1024px)">
+                  <source srcset="./images/index/chris@2x.jpg" media="(min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)">
+                  <img src="./images/index/chris.jpg" alt="Image of Christopher Walker" width="260" class="team-card__img">
+              </picture>
                 <p class="team-card__name">Christopher Walker</p>
                 <p class="team-card__function">Product Designer</p>
                 <div class="team-card__icons">
@@ -264,12 +298,11 @@
             </li>
             <li>
               <div class="team-card">
-                <img
-                  src="./images/index/kylie.jpg"
-                  alt="image of Kylie Evans"
-                  width="260"
-                  class="team-card__img"
-                />
+                <picture>
+                  <source srcset="./images/index/kylie.jpg" media="(min-width: 1024px)">
+                  <source srcset="./images/index/kylie@2x.jpg" media="(min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)">
+                  <img src="./images/index/kylie.jpg" alt="Image of Kylie Evans" width="260" class="team-card__img">
+              </picture>
                 <p class="team-card__name">Kylie Evans</p>
                 <p class="team-card__function">Frontend Developer</p>
                 <div class="team-card__icons">
@@ -330,12 +363,11 @@
             </li>
             <li>
               <div class="team-card">
-                <img
-                  src="./images/index/ryan.jpg"
-                  alt="image of Ryan Harris"
-                  width="260"
-                  class="team-card__img"
-                />
+                <picture>
+                  <source srcset="./images/index/ryan.jpg" media="(min-width: 1024px)">
+                  <source srcset="./images/index/ryan@2x.jpg" media="(min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)">
+                  <img src="./images/index/ryan.jpg" alt="Image of Ryan Harris" width="260" class="team-card__img">
+              </picture>
                 <p class="team-card__name">Ryan Harris</p>
                 <p class="team-card__function">Marketing</p>
                 <div class="team-card__icons">
@@ -396,12 +428,11 @@
             </li>
             <li>
               <div class="team-card">
-                <img
-                  src="./images/index/tyler.jpg"
-                  alt="image of Tyler Moore"
-                  width="260"
-                  class="team-card__img"
-                />
+                <picture>
+                    <source srcset="./images/index/tyler.jpg" media="(min-width: 1024px)">
+                    <source srcset="./images/index/tyler@2x.jpg" media="(min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)">
+                    <img src="./images/index/tyler.jpg" alt="Image of Tyler Moore" width="260" class="team-card__img">
+                </picture>
                 <p class="team-card__name">Tyler Moore</p>
                 <p class="team-card__function">UI Designer</p>
                 <div class="team-card__icons">
