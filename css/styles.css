@@ -691,6 +691,10 @@ a:focus .client-list__background {
   right: 10px;
 }
 
+.modal__close-btn:hover .modal__close-icon line {
+  stroke: #2196f3;
+}
+
 .modal__close-icon {
   width: 18px;
   height: 18px;
@@ -701,8 +705,10 @@ a:focus .client-list__background {
 }
 
 .modal__form h2 {
-  margin-bottom: 20px;
-  font-size: 18px;
+  margin-bottom: 30px;
+  font-size: 22px;
+  margin-top: 20px;
+  color: #000;
 }
 
 .modal__form label {
@@ -757,15 +763,22 @@ a:focus .client-list__background {
   box-sizing: border-box;
 }
 
-.input-container i {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 .input-container {
   position: relative;
+}
+
+.input-container input {
+  padding-left: 30px;
+}
+
+.input-container .icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  fill: black;
+  width: 20px;
+  height: 20px;
 }
 
 .input {
@@ -795,15 +808,15 @@ a:focus .client-list__background {
 }
 
 .checkbox-span__modal__form {
-    margin: 0 !important;
-    padding: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .checkbox-span__modal__form a {
-    color: black;
-  }
+  color: black;
+}
 
 .checkbox-span__modal__form a:hover {
-    color: #0056b3;
-    border-bottom: 1px solid #0056b3;
-  }
+  color: #0056b3;
+  border-bottom: 1px solid #0056b3;
+}

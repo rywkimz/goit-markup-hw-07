@@ -656,33 +656,55 @@
         <h2>Leave your information and we'll call you back</h2>
         <label>
           <span>Name</span>
-          <div class="input-container">
-            <input type="text" name="name" id="name" required />
-            <label for="name">
-              <svg class="icon">
-                <use xlink:href="./images/icons/persoana.svg#persoana"></use>
-              </svg>
-            </label>
-          </div> 
+          <svg style="display: none;">
+    <symbol id="persoana" viewBox="0 0 24 24">
+      <circle cx="12" cy="8" r="4"/>
+      <path d="M12 12c-4.418 0-8 3.582-8 8v2h16v-2c0-4.418-3.582-8-8-8z"/>
+    </symbol>
+  </svg>
+  <div class="input-container">
+    <input type="text" name="name" id="name" required />
+    <label for="name">
+      <svg class="icon">
+        <use xlink:href="#persoana"></use>
+      </svg>
+    </label>
+  </div>
         </label>
         <label>
           <span>Telephone</span>
-          <div class="input-container">
-            <i class="fas fa-phone"></i>
-            <input type="tel" name="telephone" required />
-          </div>
+        <svg style="display: none;">
+        <symbol id="telefon" viewBox="0 0 24 24">
+          <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.001 1.001 0 011.11-.27c1.12.45 2.33.69 3.59.69.55 0 1 .45 1 1v3.5c0 .55-.45 1-1 1C7.92 21 3 16.08 3 10c0-.55.45-1 1-1H7.5c.55 0 1 .45 1 1 0 1.26.24 2.47.69 3.59.18.43.07.93-.27 1.11l-2.2 2.2z"/>
+        </symbol>
+      </svg>
+
+      <div class="input-container">
+        <input type="text" name="name" id="name" required />
+        <label for="name">
+          <svg class="icon">
+            <use xlink:href="#telefon"></use>
+          </svg>
         </label>
-        <label>
-          <span>E-mail</span>
-          <div class="input-container">
-            <i class="fas fa-envelope"></i>
-            <input type="email" name="email" required />
-          </div>
-        </label>
+      </div>
+            <label>
+              <span>E-mail</span>
+              <svg style="display: none;">
+        <symbol id="plic" viewBox="0 0 24 24">
+          <path d="M21 4H3c-1.1 0-1.99.9-1.99 2L1 18c0 1.1.89 2 1.99 2H21c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-9 5-9-5V6l9 5 9-5v2zm-9 7l-5-3h10l-5 3z"></path>
+        </symbol>
+      </svg>
+  <div class="input-container">
+    <input type="text" name="name" id="name" required />
+    <label for="name">
+      <svg class="icon">
+        <use xlink:href="#plic"></use>
+      </svg>
+    </label>
+  </div>
         <label>
           <span>Comments</span>
           <div class="input-container">
-            <i class="fas fa-comment"></i>
             <textarea name="comments" class="centered-textarea" required></textarea>
           </div>
         </label>
