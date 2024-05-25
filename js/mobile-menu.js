@@ -6,7 +6,11 @@
     const isMenuOpen = mobileMenu.classList.contains('is-open');
     mobileMenu.classList.toggle('is-open', !isMenuOpen);
     menuToggleBtn.setAttribute('aria-expanded', !isMenuOpen);
-    bodyScrollLock.toggleBodyScroll(!isMenuOpen, mobileMenu);
+    if (isMenuOpen) {
+      bodyScrollLock.enableBodyScroll(mobileMenu);
+    } else {
+      bodyScrollLock.disableBodyScroll(mobileMenu);
+    }
   };
 
   menuToggleBtn.addEventListener('click', toggleMenu);
@@ -16,6 +20,6 @@
     if (!e.matches) return;
     mobileMenu.classList.remove('is-open');
     menuToggleBtn.setAttribute('aria-expanded', false);
-    bodyScrollLock.enableBodyScroll(document.body);
+    bodyScrollLock.enableBodyScroll(mobileMenu);
   });
 })();
