@@ -21,78 +21,80 @@
   </head>
   <body>
 <!-- Header -->
-    <div class="container flex header-section__container">
-        <nav class="header__nav-bar flex">
-            <a href="./index.html" class="header__logo logo">
-                <p><span>Web</span>Studio</p>
-            </a>
-            <button class="js-menu-toggle header__menu-toggle" aria-controls="mobile-menu" aria-expanded="false">
-                <svg class="header__menu-icon" aria-hidden="true">
-                    <use href="./images/icons/contact-icons.svg#icon-hamburger"></use>
-                </svg>
-            </button>
-            <div class="header__links-container flex center desktop-menu">
-                <a href="#" class="header__link active">
-                    <p>Studio</p>
-                </a>
-                <a href="./portofolio.html" class="header__link">
-                    <p>Portfolio</p>
-                </a>
-                <a href="#" class="header__link">
-                    <p>Contacts</p>
-                </a>
-            </div>
-        </nav>
-        <div class="header__contact flex center">
-            <a href="mailto:info@devstudio.com" class="contact__link flex center">
-                <div class="flex center header__contact-container">
-                    <svg class="header__contact-icon">
-                        <use href="./images/icons/contact-icons.svg#icon-envelope"></use>
-                    </svg>
-                    <p>info@devstudio.com</p>
-                </div>
-            </a>
-            <a href="tel:+12127724150" class="contact__link">
-                <div class="flex center header__contact-container">
-                    <svg class="header__contact-icon">
-                        <use href="./images/icons/contact-icons.svg#icon-smartphone"></use>
-                    </svg>
-                    <p>+1 212-772-4150</p>
-                </div>
-            </a>
-        </div>
+<div class="container flex header-section__container">
+  <nav class="header__nav-bar flex">
+    <a href="./index.html" class="header__logo logo">
+      <p><span>Web</span>Studio</p>
+    </a>
+    <button class="js-open-menu header__menu-toggle" aria-controls="mobile-menu" aria-expanded="false">
+      <svg class="header__menu-icon" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+        <circle cx="5" cy="12" r="2" fill="black" />
+        <circle cx="12" cy="12" r="2" fill="black" />
+        <circle cx="19" cy="12" r="2" fill="black" />
+      </svg>
+    </button>
+    <div class="header__links-container flex center desktop-menu">
+      <a href="#" class="header__link active">
+        <p>Studio</p>
+      </a>
+      <a href="./portofolio.html" class="header__link">
+        <p>Portfolio</p>
+      </a>
+      <a href="#" class="header__link">
+        <p>Contacts</p>
+      </a>
     </div>
-    <div class="js-menu-container mobile-menu">
-        <div class="mobile-menu__links">
-            <a href="#" class="header__link active">
-                <p>Studio</p>
-            </a>
-            <a href="./portofolio.html" class="header__link">
-                <p>Portfolio</p>
-            </a>
-            <a href="#" class="header__link">
-                <p>Contacts</p>
-            </a>
-        </div>
-        <div class="header__contact flex center">
-            <a href="mailto:info@devstudio.com" class="contact__link flex center">
-                <div class="flex center header__contact-container">
-                    <svg class="header__contact-icon">
-                        <use href="./images/icons/contact-icons.svg#icon-envelope"></use>
-                    </svg>
-                    <p>info@devstudio.com</p>
-                </div>
-            </a>
-            <a href="tel:+12127724150" class="contact__link">
-                <div class="flex center header__contact-container">
-                    <svg class="header__contact-icon">
-                        <use href="./images/icons/contact-icons.svg#icon-smartphone"></use>
-                    </svg>
-                    <p>+1 212-772-4150</p>
-                </div>
-            </a>
-        </div>
-    </div>
+  </nav>
+  <div class="header__contact flex center">
+    <a href="mailto:info@devstudio.com" class="contact__link flex center">
+      <div class="flex center header__contact-container">
+        <svg class="header__contact-icon">
+          <use href="./images/icons/contact-icons.svg#icon-envelope"></use>
+        </svg>
+        <p>info@devstudio.com</p>
+      </div>
+    </a>
+    <a href="tel:+12127724150" class="contact__link">
+      <div class="flex center header__contact-container">
+        <svg class="header__contact-icon">
+          <use href="./images/icons/contact-icons.svg#icon-smartphone"></use>
+        </svg>
+        <p>+1 212-772-4150</p>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="js-menu-container mobile-menu">
+  <div class="mobile-menu__links">
+    <a href="#" class="header__link active">
+      <p>Studio</p>
+    </a>
+    <a href="./portofolio.html" class="header__link">
+      <p>Portfolio</p>
+    </a>
+    <a href="#" class="header__link">
+      <p>Contacts</p>
+    </a>
+  </div>
+  <div class="header__contact flex center">
+    <a href="mailto:info@devstudio.com" class="contact__link flex center">
+      <div class="flex center header__contact-container">
+        <svg class="header__contact-icon">
+          <use href="./images/icons/contact-icons.svg#icon-envelope"></use>
+        </svg>
+        <p>info@devstudio.com</p>
+      </div>
+    </a>
+    <a href="tel:+12127724150" class="contact__link">
+      <div class="flex center header__contact-container">
+        <svg class="header__contact-icon">
+          <use href="./images/icons/contact-icons.svg#icon-smartphone"></use>
+        </svg>
+        <p>+1 212-772-4150</p>
+      </div>
+    </a>
+  </div>
+</div>
     <!-- Main -->
     <main>
       <!-- Hero section -->
@@ -647,8 +649,6 @@
         </div>
       </div>
     </footer>
-    <!-- Trigger Button -->
-    <button data-modal-open>Open Modal</button>
     <!-- Modal -->
     <div class="modal__backdrop is-hidden" data-modal>
       <div class="modal">
@@ -733,7 +733,7 @@
     </svg>
     <script src="js/modal.js"></script>
     <script src="js/mobile-menu.js"></script>
-    <script>
+<script>
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
   const menuToggleBtn = document.querySelector('.js-open-menu');
@@ -742,6 +742,13 @@
     const isMenuOpen = mobileMenu.classList.contains('is-open');
     mobileMenu.classList.toggle('is-open', !isMenuOpen);
     menuToggleBtn.setAttribute('aria-expanded', !isMenuOpen);
+
+    if (!isMenuOpen) {
+      const buttonRect = menuToggleBtn.getBoundingClientRect();
+      mobileMenu.style.top = `${buttonRect.bottom}px`;
+      mobileMenu.style.left = `${buttonRect.left}px`;
+      mobileMenu.style.width = `${buttonRect.width}px`;  // Ensure the menu width matches the button width
+    }
   };
 
   menuToggleBtn.addEventListener('click', toggleMenu);
