@@ -657,7 +657,6 @@ a:focus .client-list__background {
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   gap: 40px;
 }
@@ -746,6 +745,7 @@ a:focus .client-list__background {
   text-align: center;
   color: var(--white);
   flex-grow: 1;
+  padding-top: 0%;
 }
 
 .subscribe_section h4 {
@@ -828,7 +828,6 @@ a:focus .client-list__background {
     width: 100px;
   }
 }
-
 
 /* PORTOFOLIO PAGE */
 
