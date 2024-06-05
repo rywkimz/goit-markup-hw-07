@@ -715,26 +715,6 @@
     </svg>
     <script src="js/modal.js"></script>
     <script src="js/mobile-menu.js"></script>
-<script>
-(() => {
-  const mobileMenu = document.querySelector('.js-menu-container');
-  const menuToggleBtn = document.querySelector('.js-open-menu');
-
-  const toggleMenu = () => {
-    const isMenuOpen = mobileMenu.classList.contains('is-open');
-    mobileMenu.classList.toggle('is-open', !isMenuOpen);
-    menuToggleBtn.setAttribute('aria-expanded', !isMenuOpen);
-
-    if (!isMenuOpen) {
-      const buttonRect = menuToggleBtn.getBoundingClientRect();
-      mobileMenu.style.top = `${buttonRect.bottom}px`;
-      mobileMenu.style.left = `${buttonRect.left}px`;
-      mobileMenu.style.width = `${buttonRect.width}px`;  // Ensure the menu width matches the button width
-    }
-  };
-
-  menuToggleBtn.addEventListener('click', toggleMenu);
-})();
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.0.3/bodyScrollLock.min.js"></script>
   </body>
 </html>
